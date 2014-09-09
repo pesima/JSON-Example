@@ -23,7 +23,7 @@ Initial
 
  2. !Important don't forget to use the jQuery in this example...
 
-*   Example : ```go <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>```
+*   Example : ``` <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>```
    
 
  
