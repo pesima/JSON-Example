@@ -7,7 +7,7 @@ Download : [JSON-Example](https://github.com/pesima/JSON-Example/archive/master.
 
 Initial
 =======
- 1. Create HTML Syntax
+**Create HTML Syntax**
 
 ```go
 <html>
@@ -23,11 +23,19 @@ Initial
 
 ```
 
- 2. !Important don't forget to use the jQuery in this example...
+**!Important don't forget to use the jQuery in this example...**
 
 *   Example : ``` <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>```
    
 
+Demo
+====
+
+1. [Example 1](http://jsfiddle.net/essolo/h67fmbmj/)
+2. [Example 2](http://jsfiddle.net/essolo/ghyfvtxq/)
+3. [Example 3](http://jsfiddle.net/essolo/04n80c94/)
+4. [Example 4 - Javascript](http://jsfiddle.net/essolo/qv6eyo51/)
+5. [Example 4 - Jquery](http://jsfiddle.net/essolo/aryjc7z6/)
  
 Reference
 =========
