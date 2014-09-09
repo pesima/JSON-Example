@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--/**
+*
+* @link https://github.com/mzm-dev
+* @created September 2014
+* @fb https://www.facebook.com/zakimedia
+* @email mohdzaki04@gmail.com
+*/-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>   
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">                                      
+                    <li><a href="/git/JSON-Example/"><span class="glyphicon glyphicon-chevron-left"></span> Back</a></li>
+                    <li class="active"><a href="https://github.com/pesima/JSON-Example">Get the code on Github now HighCharts</a></li>
+                </ul>
+                <h3 class="text-muted">A JSON Tutorial | <span>Creating an object placeholder</span></h3>
+            </div>
+            <h1>Single Data</h1>
+            <div id="placeholder-JQUERY"></div>
+            <div id="placeholder-DOM"></div>
+            <script>
+                var data1 = {"namaPenuh": "Mohamad Safwan Haziq"};
+                //JQUERY
+                $("#placeholder-JQUERY").append("JQUERY : " + data1.namaPenuh);
+                //DOM
+                document.getElementById("placeholder-DOM").innerHTML = "DOM : " + data1.namaPenuh;</script>
+
+            <h1>More data</h1>
+
+            <div id="placeholder-Jq"></div>
+            <div id="placeholder-Dm"></div>
+            <script>
+                var data2 = {
+                    "namaPenuh": "Mohamad Safwan Haziq",
+                    "jawatan": "Pembantu Tadbir",
+                    "gred": "N17",
+                    "noTelefon": "03-8888 0000",
+                    "sambungan": 123
+                };
+                //JQUERY
+                $("#placeholder-Jq").append(
+                        "<p>JQUERY</p>" +
+                        "<ul>" +
+                        "<li>" + data2.namaPenuh + "</li>" +
+                        "<li>" + data2.jawatan + "</li>" +
+                        "<li>" + data2.gred + "</li>" +
+                        "<li>" + data2.noTelefon + "</li>" +
+                        "<li>" + data2.sambungan + "</li>" +
+                        "</ul>");
+
+                //DOM
+                document.getElementById("placeholder-Dm").innerHTML =
+                        "<p>DOM</p>" +
+                        "<ul>" +
+                        "<li>" + data2.namaPenuh + "</li>" +
+                        "<li>" + data2.jawatan + "</li>" +
+                        "<li>" + data2.gred + "</li>" +
+                        "<li>" + data2.noTelefon + "</li>" +
+                        "<li>" + data2.sambungan + "</li>" +
+                        "</ul>";
+            </script>
+        </div>
+    </body>
+</html>

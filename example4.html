@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--/**
+*
+* @link https://github.com/mzm-dev
+* @created September 2014
+* @fb https://www.facebook.com/zakimedia
+* @email mohdzaki04@gmail.com
+*/-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>   
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">                                      
+                    <li><a href="/git/JSON-Example/"><span class="glyphicon glyphicon-chevron-left"></span> Back</a></li>
+                    <li class="active"><a href="https://github.com/pesima/JSON-Example">Get the code on Github now HighCharts</a></li>
+                </ul>
+                <h3 class="text-muted">A JSON Tutorial | <span>Traversing the user list</span></h3>
+            </div>
+            <h1>Use JavaScript</h1>
+            <div id="placeholder-js"></div>                       
+            <script>
+                var data = {"pegawai": [
+                        {
+                            "namaPenuh": "Mohamad Safwan Haziq",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 123,
+                            "bahagian": {
+                                "nama": "Bahagian Khidmat Pengurusan",
+                                "unit": "Unit Personal"
+                            }
+                        },
+                        {
+                            "namaPenuh": "Suzariah Mohamed",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 321,
+                            "bahagian": {
+                                "nama": "Bahagian Khidmat Pengurusan",
+                                "unit": "Unit HRMIS"
+                            }
+                        }
+                    ]};
+                //DOM                               
+                var output = '<table class="table table-bordered table-hover">';
+                output += '<tr>' +
+                        '<th>Nama</th>' +
+                        '<th>Jawatan/Gred</th>' +
+                        '<th>No Telefon/Sambungan</th>' +
+                        '<th>Bahagian</th>' +
+                        '<th>Unit</th>';
+                '<tr/>';
+                for (var i in data.pegawai) {
+                    output += "<tr>";
+                    output += "<td>" + data.pegawai[i].namaPenuh + "</td>";
+                    output += "<td>" + data.pegawai[i].jawatan + "(" + data.pegawai[i].gred + ")</td>";
+                    output += "<td>" + data.pegawai[i].noTelefon + "samb. " + data.pegawai[i].sambungan + "</td>";
+                    output += "<td>" + data.pegawai[i].bahagian.nama + "</td>";
+                    output += "<td>" + data.pegawai[i].bahagian.unit + "</td>";
+                    output += "</tr>";
+                }
+                output += "</table>";
+                document.getElementById("placeholder-js").innerHTML = output;
+            </script>
+            <h1>Use Jquery</h1>
+            <div id="placeholder-jq"></div>   
+            <script>
+                var appenddata =[];
+                appenddata += '<table class="table table-bordered table-hover">';
+                appenddata += '<tr>' +
+                        '<th>Nama</th>' +
+                        '<th>Jawatan/Gred</th>' +
+                        '<th>No Telefon/Sambungan</th>' +
+                        '<th>Bahagian</th>' +
+                        '<th>Unit</th>';
+                '<tr/>';
+                $.each(data.pegawai, function(i, val) {
+                    appenddata += "<tr>";
+                    appenddata += "<td>" + val.namaPenuh + "</td>";
+                    appenddata += "<td>" + val.jawatan + "(" + val.gred + ")</td>";
+                    appenddata += "<td>" + val.noTelefon + "samb. " + val.sambungan + "</td>";
+                    appenddata += "<td>" + val.bahagian.nama + "</td>";
+                    appenddata += "<td>" + val.bahagian.unit + "</td>";
+                    appenddata += "</tr>";
+                });
+                appenddata += "</table>";
+                $('#placeholder-jq').html(appenddata);
+            </script>
+        </div>
+    </body>
+</html>

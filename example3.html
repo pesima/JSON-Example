@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--/**
+*
+* @link https://github.com/mzm-dev
+* @created September 2014
+* @fb https://www.facebook.com/zakimedia
+* @email mohdzaki04@gmail.com
+*/-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>   
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">                                      
+                    <li><a href="/git/JSON-Example/"><span class="glyphicon glyphicon-chevron-left"></span> Back</a></li>
+                    <li class="active"><a href="https://github.com/pesima/JSON-Example">Get the code on Github now HighCharts</a></li>
+                </ul>
+                <h3 class="text-muted">A JSON Tutorial | <span>Adding Arrays</span></h3>
+            </div>
+            <h1>Couple of Data</h1>
+            <div id="placeholder-1"></div>           
+            <h1>Couple of Data with Sub-Data</h1>
+            <div id="placeholder-2"></div>            
+
+            <script>
+                var data1 = {"pegawai": [
+                        {
+                            "namaPenuh": "Mohamad Safwan Haziq",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 123
+                        },
+                        {
+                            "namaPenuh": "Suzariah Mohamed",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 321
+                        }
+                    ]};
+                //DOM                               
+                document.getElementById("placeholder-1").innerHTML =
+                        "<ul>" +
+                        "<li>" + data1.pegawai[0].namaPenuh + "</li>" +
+                        "<li>" + data1.pegawai[0].jawatan + "</li>" +
+                        "<li>" + data1.pegawai[0].gred + "</li>" +
+                        "<li>" + data1.pegawai[0].noTelefon + "</li>" +
+                        "<li>" + data1.pegawai[0].sambungan + "</li>" +
+                        "</ul>";
+            </script>
+            <script>
+                var data2 = {"pegawai": [
+                        {
+                            "namaPenuh": "Mohamad Safwan Haziq",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 123,
+                            "bahagian": {
+                                "nama": "Bahagian Khidmat Pengurusan",
+                                "unit": "Unit Personal"
+                            }
+                        },
+                        {
+                            "namaPenuh": "Suzariah Mohamed",
+                            "jawatan": "Pembantu Tadbir",
+                            "gred": "N17",
+                            "noTelefon": "03-8888 0000",
+                            "sambungan": 321,
+                            "bahagian": {
+                                "nama": "Bahagian Khidmat Pengurusan",
+                                "unit": "Unit HRMIS"
+                            }
+                        }
+                    ]};
+                //DOM                               
+                document.getElementById("placeholder-2").innerHTML =
+                        "<ul>" +
+                        "<li>" + data2.pegawai[1].namaPenuh + "</li>" +
+                        "<li>" + data2.pegawai[1].jawatan + "</li>" +
+                        "<li>" + data2.pegawai[1].gred + "</li>" +
+                        "<li>" + data2.pegawai[1].noTelefon + "</li>" +
+                        "<li>" + data2.pegawai[1].sambungan + "</li>" +
+                        "<li>" + data2.pegawai[1].bahagian.nama + "</li>" +
+                        "<li>" + data2.pegawai[1].bahagian.unit + "</li>" +
+                        "</ul>";
+
+                /*"<ul>" +
+                 "<li>" + data2.pegawai[1].namaPenuh + "</li>" +
+                 "<li>" + data2.pegawai[1].jawatan + "</li>" +
+                 "<li>" + data2.pegawai[1].gred + "</li>" +
+                 "<li>" + data2.pegawai[1].noTelefon + "</li>" +
+                 "<li>" + data2.pegawai[1].sambungan + 
+                 "<ul>"+
+                 "<li>" + data2.pegawai[1].bahagian.nama + "</li>" +
+                 "<li>" + data2.pegawai[1].bahagian.unit + "</li>" +
+                 "<ul>"+
+                 "</li>"+        
+                 "</ul>";*/
+            </script>
+        </div>
+    </body>
+</html>

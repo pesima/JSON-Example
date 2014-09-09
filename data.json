@@ -1,0 +1,26 @@
+{
+    "pegawai": [
+        {
+            "namaPenuh": "Mohamad Safwan Haziq",
+            "jawatan": "Pembantu Tadbir",
+            "gred": "N17",
+            "noTelefon": "03-8888 0000",
+            "sambungan": 123,
+            "bahagian": {
+                "nama": "Bahagian Khidmat Pengurusan",
+                "unit": "Unit Personal"
+            }
+        },
+        {
+            "namaPenuh": "Suzariah Mohamed",
+            "jawatan": "Pembantu Tadbir",
+            "gred": "N17",
+            "noTelefon": "03-8888 0000",
+            "sambungan": 321,
+            "bahagian": {
+                "nama": "Bahagian Khidmat Pengurusan",
+                "unit": "Unit HRMIS"
+            }
+        }
+    ]
+}
