@@ -31,11 +31,11 @@ Initial
 Demo (http://jsfiddle.net)
 ==========================
 
-1. [Example 1](http://jsfiddle.net/essolo/h67fmbmj/)
-2. [Example 2](http://jsfiddle.net/essolo/ghyfvtxq/)
-3. [Example 3](http://jsfiddle.net/essolo/04n80c94/)
-4. [Example 4 - Javascript](http://jsfiddle.net/essolo/qv6eyo51/)
-5. [Example 4 - Jquery](http://jsfiddle.net/essolo/aryjc7z6/)
+1. [Example 1](http://jsfiddle.net/essolo/h67fmbmj/){:target="_blank"}
+2. [Example 2](http://jsfiddle.net/essolo/ghyfvtxq/){:target="_blank"}
+3. [Example 3](http://jsfiddle.net/essolo/04n80c94/){:target="_blank"}
+4. [Example 4 - Javascript](http://jsfiddle.net/essolo/qv6eyo51/){:target="_blank"}
+5. [Example 4 - Jquery](http://jsfiddle.net/essolo/aryjc7z6/){:target="_blank"}
  
 Reference
 =========
