@@ -28,8 +28,8 @@ Initial
 *   Example : ``` <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>```
    
 
-Demo
-====
+Demo (http://jsfiddle.net)
+==========================
 
 1. [Example 1](http://jsfiddle.net/essolo/h67fmbmj/)
 2. [Example 2](http://jsfiddle.net/essolo/ghyfvtxq/)
